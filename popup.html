@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>first-chrome-extension</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans" type="text/css">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Titillium+Web" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <style>
+
+    </style>
+
+</head>
+
+<body>
+    <div class="content">
+        <div>
+            <button id="copy" class="btn">Get URLs</button>
+        </div>
+        <div id="urls"></div>
+
+        <div class="description">
+            <h4>Get and Save URLs from the Current Window !!</h4>
+        </div>
+    </div>
+
+    <footer class="gtx-footer">
+        <div id="autoOption"></div>
+        © <span id="year">2019</span> Lukasowy -
+        <a class="gtx-a" id="options-link" target="_blank" href="options.html">Extension Options</a>
+    </footer>
+
+    <script type="module" src="/js/popup/popup.js"></script>
+    <script type="module" src="/js/popup/localStorage.js"></script>
+    <script type="module" src="/js/popup/notifications.js"></script>
+</body>
+
+</html>
