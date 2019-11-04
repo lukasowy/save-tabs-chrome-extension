@@ -101,7 +101,6 @@ function createLinkList(array, cardId) {
     let ulList = createListContent('ul', 'item-content', 'ftlform');
     let cardTitle = createCardTitleInput(array[array.length - 1].cardTitle, cardId);
 
-
     divContainer.appendChild(divPanel)
     divContainer.appendChild(ulList);
 
@@ -159,12 +158,6 @@ function creteIcon(...classNames) {
         icon.className += className + " ";
     });
     return icon;
-}
-
-function createItemSettings() {
-    var settings = document.createElement('div');
-
-    return settings
 }
 
 function createCardTitleInput(title, cardId) {

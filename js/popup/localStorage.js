@@ -3,6 +3,7 @@ export function saveUrlsInLocalStorage(data) {
     let index = countData() + 1;
     data.push({ 'cardTitle': `New Card ${index}` })
     localStorage.setItem(randomTitle, JSON.stringify(data));
+    return JSON.parse(localStorage.getItem(randomTitle));
 }
 
 export function getAllData() {
@@ -14,6 +15,7 @@ export function getAllData() {
 
 export function updateCardTitle(keyName, title) {
     let values = JSON.parse(localStorage.getItem(keyName));
+    console.log(values);
     values[values.length - 1].cardTitle = title;
     localStorage.setItem(keyName, JSON.stringify(values));
 
@@ -24,6 +26,7 @@ export function getUrlsFromLocalStorage(keyName) {
 }
 
 export function deleteUrlsFromLocalStorage(keyName) {
+    console.log(keyName);
     localStorage.removeItem(keyName);
 }
 
